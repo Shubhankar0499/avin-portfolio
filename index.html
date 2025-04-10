@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avin Ganjaila | Motion Designer & Creative Services</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <h1 class="reveal">Avin Ganjaila</h1>
+    <p class="reveal">Motion Designer | 2D & 3D Visual Creator | Video Editor</p>
+    <a href="#contact" class="cta reveal">Let’s Work Together</a>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services" class="reveal">
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card">Social Media Reels</div>
+      <div class="card">Campaign Advertisements</div>
+      <div class="card">Promotional Content</div>
+      <div class="card">3D Product Visualization</div>
+      <div class="card">Video Editing</div>
+      <div class="card">Motion Graphics</div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="reveal">
+    <h2>Featured Work</h2>
+    <div class="video">
+      <video src="https://drive.google.com/uc?export=download&id=17ZgoLELibYlChSY3n-Q5BX41H92FBgpu" controls autoplay muted loop></video>
+    </div>
+    <div class="grid portfolio-gallery">
+      <a href="https://drive.google.com/uc?export=download&id=17Zl4ldP6azt_BnTRcHDCcaNtwebJfHlD" data-lightbox="gallery"><img src="https://drive.google.com/uc?export=download&id=17Zl4ldP6azt_BnTRcHDCcaNtwebJfHlD" alt="Work 1"></a>
+      <a href="https://drive.google.com/uc?export=download&id=17c18ga6K8LCCzw6-k4dib3zIQ8QXTURI" data-lightbox="gallery"><img src="https://drive.google.com/uc?export=download&id=17c18ga6K8LCCzw6-k4dib3zIQ8QXTURI" alt="Work 2"></a>
+      <a href="https://drive.google.com/uc?export=download&id=17dqIjxEOeGTdib2jZr5QMJpzsiJ-_S81" data-lightbox="gallery"><img src="https://drive.google.com/uc?export=download&id=17dqIjxEOeGTdib2jZr5QMJpzsiJ-_S81" alt="Work 3"></a>
+      <a href="https://drive.google.com/uc?export=download&id=17j9CqMY_48rWrlRZcmNyzG_Xj6xvTXgr" data-lightbox="gallery"><img src="https://drive.google.com/uc?export=download&id=17j9CqMY_48rWrlRZcmNyzG_Xj6xvTXgr" alt="Work 4"></a>
+      <a href="https://drive.google.com/uc?export=download&id=17od-n5yHZJjirS8tlCEdkHrI62QF9YsX" data-lightbox="gallery"><img src="https://drive.google.com/uc?export=download&id=17od-n5yHZJjirS8tlCEdkHrI62QF9YsX" alt="Work 5"></a>
+      <a href="https://drive.google.com/uc?export=download&id=17nDN_qJKh7h5qsW8D3h_q9ZrL-cBceek" data-lightbox="gallery"><img src="https://drive.google.com/uc?export=download&id=17nDN_qJKh7h5qsW8D3h_q9ZrL-cBceek" alt="Work 6"></a>
+    </div>
+  </section>
+
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <p>I’m a creative visual artist with a BSc in Media Graphic Animation from Times and Trends Academy. With experience in multiple studios and a passion for storytelling, I bring ideas to life through stunning visuals, from reels to full-scale motion graphics.</p>
+  </section>
+
+  <section id="testimonials" class="reveal">
+    <h2>Testimonials</h2>
+    <div class="grid">
+      <div class="card">“Avin’s work transformed our brand’s presence online. Highly recommend him for any creative project!” — Sanket Visuals</div>
+      <div class="card">“Professional, fast, and highly creative. We loved the campaign reels Avin delivered.” — WODIO Art Studios</div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <a href="Avin_Resume.pdf" download class="btn">📄 Download Resume</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Avin Ganjaila | Contact: avinganjaila@gmail.com | +91 8669348874</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const revealOnScroll = () => {
+      for (const el of reveals) {
+        const top = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (top < windowHeight - 50) {
+          el.classList.add('visible');
+        }
+      }
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
